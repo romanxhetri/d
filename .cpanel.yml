@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/$(whoami)/public_html
+    # Note: If you have your build files in a 'dist' folder, 
+    # you might want to change the line below to:
+    # - /bin/cp -R dist/* $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
